@@ -16,6 +16,22 @@
 		8093596729C268260085642E /* DutyPharmaciesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8093596629C268260085642E /* DutyPharmaciesTests.swift */; };
 		8093597129C268260085642E /* DutyPharmaciesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8093597029C268260085642E /* DutyPharmaciesUITests.swift */; };
 		8093597329C268260085642E /* DutyPharmaciesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8093597229C268260085642E /* DutyPharmaciesUITestsLaunchTests.swift */; };
+		8093598D29C269040085642E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8093598229C269030085642E /* FMDatabaseQueue.m */; };
+		8093598E29C269040085642E /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8093598429C269030085642E /* FMDatabase.m */; };
+		8093598F29C269040085642E /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8093598629C269030085642E /* FMDatabaseAdditions.m */; };
+		8093599029C269040085642E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8093598829C269040085642E /* FMDatabasePool.m */; };
+		8093599129C269040085642E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8093598A29C269040085642E /* FMResultSet.m */; };
+		8093599529C269980085642E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8093598029C268F20085642E /* libsqlite3.0.tbd */; };
+		8093599829C269DE0085642E /* Sehirlerdao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8093599729C269DE0085642E /* Sehirlerdao.swift */; };
+		8093599A29C26A600085642E /* SQLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8093599929C26A600085642E /* SQLService.swift */; };
+		809359A029C26A960085642E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8093599F29C26A960085642E /* APIManager.swift */; };
+		809359A229C26AA50085642E /* ProvinceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809359A129C26AA50085642E /* ProvinceModel.swift */; };
+		809359A429C26ABF0085642E /* PharmacyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809359A329C26ABF0085642E /* PharmacyModel.swift */; };
+		809359A929C272480085642E /* ProvincesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809359A829C272480085642E /* ProvincesViewModel.swift */; };
+		809359AB29C272940085642E /* ProvinceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809359AA29C272940085642E /* ProvinceProtocols.swift */; };
+		809359AE29C27FC20085642E /* PharmaciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809359AD29C27FC20085642E /* PharmaciesViewModel.swift */; };
+		809359B029C280C20085642E /* PharmacyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809359AF29C280C20085642E /* PharmacyListView.swift */; };
+		809359B229C280E60085642E /* PharmacyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809359B129C280E60085642E /* PharmacyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +65,30 @@
 		8093596C29C268260085642E /* DutyPharmaciesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DutyPharmaciesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8093597029C268260085642E /* DutyPharmaciesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DutyPharmaciesUITests.swift; sourceTree = "<group>"; };
 		8093597229C268260085642E /* DutyPharmaciesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DutyPharmaciesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8093598029C268F20085642E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		8093598129C269020085642E /* DutyPharmacies-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DutyPharmacies-Bridging-Header.h"; sourceTree = "<group>"; };
+		8093598229C269030085642E /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		8093598329C269030085642E /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		8093598429C269030085642E /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		8093598529C269030085642E /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		8093598629C269030085642E /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		8093598729C269040085642E /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		8093598829C269040085642E /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		8093598929C269040085642E /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		8093598A29C269040085642E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		8093598B29C269040085642E /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		8093598C29C269040085642E /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		8093599729C269DE0085642E /* Sehirlerdao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sehirlerdao.swift; sourceTree = "<group>"; };
+		8093599929C26A600085642E /* SQLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLService.swift; sourceTree = "<group>"; };
+		8093599F29C26A960085642E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		809359A129C26AA50085642E /* ProvinceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceModel.swift; sourceTree = "<group>"; };
+		809359A329C26ABF0085642E /* PharmacyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyModel.swift; sourceTree = "<group>"; };
+		809359A629C26C270085642E /* illerDeprem.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = illerDeprem.db; sourceTree = "<group>"; };
+		809359A829C272480085642E /* ProvincesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvincesViewModel.swift; sourceTree = "<group>"; };
+		809359AA29C272940085642E /* ProvinceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceProtocols.swift; sourceTree = "<group>"; };
+		809359AD29C27FC20085642E /* PharmaciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaciesViewModel.swift; sourceTree = "<group>"; };
+		809359AF29C280C20085642E /* PharmacyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyListView.swift; sourceTree = "<group>"; };
+		809359B129C280E60085642E /* PharmacyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8093599529C269980085642E /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +124,7 @@
 				8093596529C268260085642E /* DutyPharmaciesTests */,
 				8093596F29C268260085642E /* DutyPharmaciesUITests */,
 				8093594D29C268250085642E /* Products */,
+				8093597F29C268F20085642E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +141,19 @@
 		8093594E29C268250085642E /* DutyPharmacies */ = {
 			isa = PBXGroup;
 			children = (
+				809359AA29C272940085642E /* ProvinceProtocols.swift */,
+				809359A529C26C0E0085642E /* SQLFiles */,
+				8093599E29C26A790085642E /* Services */,
+				8093599D29C26A760085642E /* ViewModel */,
+				8093599C29C26A740085642E /* View */,
+				8093599B29C26A710085642E /* Model */,
 				8093594F29C268250085642E /* AppDelegate.swift */,
 				8093595129C268250085642E /* SceneDelegate.swift */,
-				8093595329C268250085642E /* ViewController.swift */,
-				8093595529C268250085642E /* Main.storyboard */,
 				8093595829C268250085642E /* Assets.xcassets */,
+				8093595529C268250085642E /* Main.storyboard */,
 				8093595A29C268250085642E /* LaunchScreen.storyboard */,
 				8093595D29C268250085642E /* Info.plist */,
+				8093598129C269020085642E /* DutyPharmacies-Bridging-Header.h */,
 			);
 			path = DutyPharmacies;
 			sourceTree = "<group>";
@@ -125,6 +173,71 @@
 				8093597229C268260085642E /* DutyPharmaciesUITestsLaunchTests.swift */,
 			);
 			path = DutyPharmaciesUITests;
+			sourceTree = "<group>";
+		};
+		8093597F29C268F20085642E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8093598029C268F20085642E /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8093599B29C26A710085642E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				809359A129C26AA50085642E /* ProvinceModel.swift */,
+				809359A329C26ABF0085642E /* PharmacyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8093599C29C26A740085642E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8093595329C268250085642E /* ViewController.swift */,
+				809359AF29C280C20085642E /* PharmacyListView.swift */,
+				809359B129C280E60085642E /* PharmacyCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8093599D29C26A760085642E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				809359A829C272480085642E /* ProvincesViewModel.swift */,
+				809359AD29C27FC20085642E /* PharmaciesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8093599E29C26A790085642E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8093599729C269DE0085642E /* Sehirlerdao.swift */,
+				8093599929C26A600085642E /* SQLService.swift */,
+				8093599F29C26A960085642E /* APIManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		809359A529C26C0E0085642E /* SQLFiles */ = {
+			isa = PBXGroup;
+			children = (
+				809359A629C26C270085642E /* illerDeprem.db */,
+				8093598C29C269040085642E /* FMDatabase.h */,
+				8093598429C269030085642E /* FMDatabase.m */,
+				8093598529C269030085642E /* FMDatabaseAdditions.h */,
+				8093598629C269030085642E /* FMDatabaseAdditions.m */,
+				8093598B29C269040085642E /* FMDatabasePool.h */,
+				8093598829C269040085642E /* FMDatabasePool.m */,
+				8093598729C269040085642E /* FMDatabaseQueue.h */,
+				8093598229C269030085642E /* FMDatabaseQueue.m */,
+				8093598929C269040085642E /* FMDB.h */,
+				8093598329C269030085642E /* FMResultSet.h */,
+				8093598A29C269040085642E /* FMResultSet.m */,
+			);
+			path = SQLFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +308,7 @@
 				TargetAttributes = {
 					8093594B29C268250085642E = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					8093596129C268260085642E = {
 						CreatedOnToolsVersion = 14.2;
@@ -258,9 +372,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				809359AB29C272940085642E /* ProvinceProtocols.swift in Sources */,
+				8093599A29C26A600085642E /* SQLService.swift in Sources */,
 				8093595429C268250085642E /* ViewController.swift in Sources */,
+				809359A929C272480085642E /* ProvincesViewModel.swift in Sources */,
+				8093598D29C269040085642E /* FMDatabaseQueue.m in Sources */,
+				809359A429C26ABF0085642E /* PharmacyModel.swift in Sources */,
+				809359B029C280C20085642E /* PharmacyListView.swift in Sources */,
 				8093595029C268250085642E /* AppDelegate.swift in Sources */,
+				809359B229C280E60085642E /* PharmacyCell.swift in Sources */,
+				809359A029C26A960085642E /* APIManager.swift in Sources */,
+				8093598E29C269040085642E /* FMDatabase.m in Sources */,
+				8093599029C269040085642E /* FMDatabasePool.m in Sources */,
+				8093599829C269DE0085642E /* Sehirlerdao.swift in Sources */,
 				8093595229C268250085642E /* SceneDelegate.swift in Sources */,
+				809359A229C26AA50085642E /* ProvinceModel.swift in Sources */,
+				809359AE29C27FC20085642E /* PharmaciesViewModel.swift in Sources */,
+				8093599129C269040085642E /* FMResultSet.m in Sources */,
+				8093598F29C269040085642E /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +564,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 936XSD7LYL;
@@ -453,6 +583,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ibrahimmbyrrm.DutyPharmacies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DutyPharmacies/DutyPharmacies-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -463,6 +595,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 936XSD7LYL;
@@ -481,6 +614,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ibrahimmbyrrm.DutyPharmacies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DutyPharmacies/DutyPharmacies-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

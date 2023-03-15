@@ -1,24 +1,252 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HW7-sH-g2t">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--DutyPharmacies-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DutyPharmacies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eczaneLogo" translatesAutoresizingMaskIntoConstraints="NO" id="pOE-NO-BZW">
+                                <rect key="frame" x="88" y="113" width="216" height="163"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="163" id="Gye-8K-H26"/>
+                                    <constraint firstAttribute="width" constant="216" id="WtO-ob-K5v"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bölgenizdeki nöbetçi eczaneleri hemen bulun." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zd-oP-yqk">
+                                <rect key="frame" x="38" y="284" width="317" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="rR3-nO-q4A"/>
+                                    <constraint firstAttribute="width" constant="317" id="rcf-Ua-7sa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdR-i6-HK8">
+                                <rect key="frame" x="0.0" y="393" width="393" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="4V4-ix-nki"/>
+                                    <constraint firstAttribute="width" constant="393" id="T1F-iE-yXK"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lE-0s-1NK">
+                                <rect key="frame" x="49" y="584" width="296" height="51"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="296" id="W84-S0-NDB"/>
+                                    <constraint firstAttribute="height" constant="51" id="rma-Uy-qpv"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Eczaneleri Listele -&gt;">
+                                    <fontDescription key="titleFontDescription" name="Thonburi" family="Thonburi" pointSize="28"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="listButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="flb-eF-OVh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0lE-0s-1NK" firstAttribute="top" secondItem="AdR-i6-HK8" secondAttribute="bottom" constant="29" id="4dK-SN-dV7"/>
+                            <constraint firstItem="AdR-i6-HK8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5yo-mi-a71"/>
+                            <constraint firstItem="9Zd-oP-yqk" firstAttribute="top" secondItem="pOE-NO-BZW" secondAttribute="bottom" constant="8" symbolic="YES" id="GFq-1r-NEM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pOE-NO-BZW" secondAttribute="trailing" constant="89" id="K5M-aE-AJ7"/>
+                            <constraint firstItem="0lE-0s-1NK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="M0e-Lb-XL6"/>
+                            <constraint firstItem="9Zd-oP-yqk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="XiW-qM-pSg"/>
+                            <constraint firstItem="pOE-NO-BZW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="ZxJ-3b-I47"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0lE-0s-1NK" secondAttribute="trailing" constant="48" id="a0R-bg-jvG"/>
+                            <constraint firstItem="AdR-i6-HK8" firstAttribute="top" secondItem="9Zd-oP-yqk" secondAttribute="bottom" constant="8" symbolic="YES" id="aDm-nT-mPm"/>
+                            <constraint firstItem="AdR-i6-HK8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="grF-S4-esF"/>
+                            <constraint firstItem="pOE-NO-BZW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="pS3-eR-Sx9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Zd-oP-yqk" secondAttribute="trailing" constant="38" id="wSh-gM-Ft2"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="DutyPharmacies" id="cgJ-A2-LLi">
+                        <barButtonItem key="backBarButtonItem" title="Şehirler" id="u1t-nI-Za7"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="provincePicker" destination="AdR-i6-HK8" id="jae-vE-SkB"/>
+                        <segue destination="DDC-qs-fZZ" kind="show" identifier="toList" id="V91-U4-c2X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="991.60305343511448" y="-2.1126760563380285"/>
+        </scene>
+        <!--Nöbetçi Eczaneler-->
+        <scene sceneID="1fq-2s-BpN">
+            <objects>
+                <viewController title="Nöbetçi Eczaneler" id="DDC-qs-fZZ" customClass="PharmacyListView" customModule="DutyPharmacies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K5f-5V-efU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VLN-jm-Rvq">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="165" id="emb-OV-CHY" customClass="PharmacyCell" customModule="DutyPharmacies" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="165"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="emb-OV-CHY" id="Dju-Jl-0Nb">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="165"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eczaneLogo" translatesAutoresizingMaskIntoConstraints="NO" id="GKi-Op-RGq">
+                                                    <rect key="frame" x="288" y="9" width="100" height="83"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="E5d-05-cZZ"/>
+                                                        <constraint firstAttribute="height" constant="83" id="gJ8-wl-uN7"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eczane Adı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsC-Po-lb5">
+                                                    <rect key="frame" x="4" y="5" width="281" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="SKR-nJ-g8D"/>
+                                                        <constraint firstAttribute="width" constant="281" id="qDR-uP-o2I"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kağıthane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDe-uK-fSo">
+                                                    <rect key="frame" x="4" y="34" width="281" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="281" id="JAF-Xh-Uf4"/>
+                                                        <constraint firstAttribute="height" constant="21" id="ZOm-3F-yXa"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefon No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGC-Hp-vsD">
+                                                    <rect key="frame" x="4" y="63" width="281" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="281" id="4o5-6b-W4Y"/>
+                                                        <constraint firstAttribute="height" constant="21" id="FM7-Uq-r6a"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adres knlegrknldfnklgf kndfknjdknjh nfkddknfknfhfdlkmdfjkhfhd" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmg-ec-k0o">
+                                                    <rect key="frame" x="4" y="92" width="281" height="67"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="281" id="4CC-wM-ikJ"/>
+                                                        <constraint firstAttribute="height" constant="67" id="4an-Y1-dDR"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYm-rh-mOw">
+                                                    <rect key="frame" x="293" y="116" width="99" height="38"/>
+                                                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="38" id="EU4-Lq-YP9"/>
+                                                        <constraint firstAttribute="width" constant="99" id="voA-Gs-fLO"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Haritada Aç" subtitle="">
+                                                        <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="openInMap:" destination="emb-OV-CHY" eventType="touchUpInside" id="Yzf-BA-ajy"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="RYm-rh-mOw" firstAttribute="top" secondItem="GKi-Op-RGq" secondAttribute="bottom" constant="24" id="AxS-bc-XHI"/>
+                                                <constraint firstItem="GKi-Op-RGq" firstAttribute="leading" secondItem="CsC-Po-lb5" secondAttribute="trailing" constant="3" id="Bc7-vx-MPC"/>
+                                                <constraint firstAttribute="bottom" secondItem="Rmg-ec-k0o" secondAttribute="bottom" constant="6" id="BpG-pH-aJx"/>
+                                                <constraint firstItem="GKi-Op-RGq" firstAttribute="leading" secondItem="DDe-uK-fSo" secondAttribute="trailing" constant="3" id="D51-kk-t1j"/>
+                                                <constraint firstAttribute="trailing" secondItem="RYm-rh-mOw" secondAttribute="trailing" constant="1" id="D8V-qo-vNI"/>
+                                                <constraint firstItem="GKi-Op-RGq" firstAttribute="leading" secondItem="CsC-Po-lb5" secondAttribute="trailing" constant="3" id="Fbu-BR-NuU"/>
+                                                <constraint firstAttribute="bottom" secondItem="RYm-rh-mOw" secondAttribute="bottom" constant="11" id="GlN-7d-c68"/>
+                                                <constraint firstItem="CsC-Po-lb5" firstAttribute="leading" secondItem="Dju-Jl-0Nb" secondAttribute="leading" constant="4" id="IPg-Ti-A0G"/>
+                                                <constraint firstItem="GKi-Op-RGq" firstAttribute="top" secondItem="Dju-Jl-0Nb" secondAttribute="top" constant="9" id="K3x-mi-Aje"/>
+                                                <constraint firstItem="DDe-uK-fSo" firstAttribute="top" secondItem="CsC-Po-lb5" secondAttribute="bottom" constant="8" symbolic="YES" id="KEv-Gb-CSP"/>
+                                                <constraint firstItem="DDe-uK-fSo" firstAttribute="leading" secondItem="Dju-Jl-0Nb" secondAttribute="leading" constant="4" id="LJl-9b-2NW"/>
+                                                <constraint firstItem="lGC-Hp-vsD" firstAttribute="leading" secondItem="Dju-Jl-0Nb" secondAttribute="leading" constant="4" id="MUg-in-0O5"/>
+                                                <constraint firstAttribute="trailing" secondItem="GKi-Op-RGq" secondAttribute="trailing" constant="5" id="Qsa-YQ-Tlc"/>
+                                                <constraint firstItem="Rmg-ec-k0o" firstAttribute="leading" secondItem="Dju-Jl-0Nb" secondAttribute="leading" constant="4" id="Wnf-Zj-T0e"/>
+                                                <constraint firstItem="lGC-Hp-vsD" firstAttribute="top" secondItem="DDe-uK-fSo" secondAttribute="bottom" constant="8" symbolic="YES" id="XZw-q4-Hxh"/>
+                                                <constraint firstItem="Rmg-ec-k0o" firstAttribute="top" secondItem="lGC-Hp-vsD" secondAttribute="bottom" constant="8" symbolic="YES" id="Zzs-tm-S45"/>
+                                                <constraint firstItem="RYm-rh-mOw" firstAttribute="top" secondItem="GKi-Op-RGq" secondAttribute="bottom" constant="24" id="aLX-iP-IGe"/>
+                                                <constraint firstItem="RYm-rh-mOw" firstAttribute="leading" secondItem="Rmg-ec-k0o" secondAttribute="trailing" constant="8" symbolic="YES" id="eQJ-vK-wil"/>
+                                                <constraint firstItem="Rmg-ec-k0o" firstAttribute="top" secondItem="lGC-Hp-vsD" secondAttribute="bottom" constant="8" symbolic="YES" id="fP4-Te-l5b"/>
+                                                <constraint firstItem="CsC-Po-lb5" firstAttribute="top" secondItem="Dju-Jl-0Nb" secondAttribute="top" constant="5" id="jIe-US-rlB"/>
+                                                <constraint firstItem="RYm-rh-mOw" firstAttribute="leading" secondItem="Rmg-ec-k0o" secondAttribute="trailing" constant="8" symbolic="YES" id="xbU-cA-2CH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="pharmAddress" destination="Rmg-ec-k0o" id="5MN-KX-AqL"/>
+                                            <outlet property="pharmDistrict" destination="DDe-uK-fSo" id="knf-xT-fNZ"/>
+                                            <outlet property="pharmName" destination="CsC-Po-lb5" id="g57-gF-IR2"/>
+                                            <outlet property="pharmPhone" destination="lGC-Hp-vsD" id="vvt-y9-3ap"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CyS-AZ-s0J"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VLN-jm-Rvq" firstAttribute="top" secondItem="CyS-AZ-s0J" secondAttribute="top" id="1cG-Uo-xuq"/>
+                            <constraint firstItem="CyS-AZ-s0J" firstAttribute="trailing" secondItem="VLN-jm-Rvq" secondAttribute="trailing" id="SU5-TG-Orw"/>
+                            <constraint firstItem="VLN-jm-Rvq" firstAttribute="leading" secondItem="CyS-AZ-s0J" secondAttribute="leading" id="gUh-JJ-ffP"/>
+                            <constraint firstItem="CyS-AZ-s0J" firstAttribute="bottom" secondItem="VLN-jm-Rvq" secondAttribute="bottom" id="ocG-xZ-8vH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nöbetçi Eczaneler" id="Pwq-OI-wjE"/>
+                    <connections>
+                        <outlet property="tableView" destination="VLN-jm-Rvq" id="n21-k8-Gpb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igA-q8-vNl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1730.534351145038" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wTO-HH-TBB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HW7-sH-g2t" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c6B-MA-QWa">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="i3m-Fo-M1R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RXg-UV-ieb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.885496183206101" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="eczaneLogo" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
