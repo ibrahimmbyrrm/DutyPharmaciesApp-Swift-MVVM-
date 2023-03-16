@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HW7-sH-g2t">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,20 +10,20 @@
         <!--DutyPharmacies-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DutyPharmacies" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeView" customModule="DutyPharmacies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eczaneLogo" translatesAutoresizingMaskIntoConstraints="NO" id="pOE-NO-BZW">
-                                <rect key="frame" x="88" y="113" width="216" height="163"/>
+                                <rect key="frame" x="88" y="54" width="423" height="163"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="163" id="Gye-8K-H26"/>
                                     <constraint firstAttribute="width" constant="216" id="WtO-ob-K5v"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bölgenizdeki nöbetçi eczaneleri hemen bulun." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zd-oP-yqk">
-                                <rect key="frame" x="38" y="284" width="317" height="101"/>
+                                <rect key="frame" x="38" y="225" width="524" height="101"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="101" id="rR3-nO-q4A"/>
                                     <constraint firstAttribute="width" constant="317" id="rcf-Ua-7sa"/>
@@ -34,14 +33,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdR-i6-HK8">
-                                <rect key="frame" x="0.0" y="393" width="393" height="162"/>
+                                <rect key="frame" x="0.0" y="334" width="600" height="162"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="4V4-ix-nki"/>
                                     <constraint firstAttribute="width" constant="393" id="T1F-iE-yXK"/>
                                 </constraints>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lE-0s-1NK">
-                                <rect key="frame" x="49" y="584" width="296" height="51"/>
+                                <rect key="frame" x="49" y="525" width="503" height="51"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="296" id="W84-S0-NDB"/>
@@ -91,29 +90,29 @@
             <objects>
                 <viewController title="Nöbetçi Eczaneler" id="DDC-qs-fZZ" customClass="PharmacyListView" customModule="DutyPharmacies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K5f-5V-efU">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VLN-jm-Rvq">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="165" id="emb-OV-CHY" customClass="PharmacyCell" customModule="DutyPharmacies" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="165"/>
+                                        <rect key="frame" x="0.0" y="50" width="600" height="165"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="emb-OV-CHY" id="Dju-Jl-0Nb">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="165"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="165"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eczaneLogo" translatesAutoresizingMaskIntoConstraints="NO" id="GKi-Op-RGq">
-                                                    <rect key="frame" x="288" y="9" width="100" height="83"/>
+                                                    <rect key="frame" x="495" y="9" width="100" height="83"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="100" id="E5d-05-cZZ"/>
                                                         <constraint firstAttribute="height" constant="83" id="gJ8-wl-uN7"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eczane Adı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsC-Po-lb5">
-                                                    <rect key="frame" x="4" y="5" width="281" height="21"/>
+                                                    <rect key="frame" x="4" y="5" width="488" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="SKR-nJ-g8D"/>
                                                         <constraint firstAttribute="width" constant="281" id="qDR-uP-o2I"/>
@@ -123,7 +122,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kağıthane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDe-uK-fSo">
-                                                    <rect key="frame" x="4" y="34" width="281" height="21"/>
+                                                    <rect key="frame" x="4" y="34" width="488" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="281" id="JAF-Xh-Uf4"/>
                                                         <constraint firstAttribute="height" constant="21" id="ZOm-3F-yXa"/>
@@ -143,7 +142,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adres knlegrknldfnklgf kndfknjdknjh nfkddknfknfhfdlkmdfjkhfhd" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmg-ec-k0o">
-                                                    <rect key="frame" x="4" y="92" width="281" height="67"/>
+                                                    <rect key="frame" x="4" y="92" width="488" height="67"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="281" id="4CC-wM-ikJ"/>
                                                         <constraint firstAttribute="height" constant="67" id="4an-Y1-dDR"/>
@@ -153,7 +152,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYm-rh-mOw">
-                                                    <rect key="frame" x="289" y="116" width="99" height="38"/>
+                                                    <rect key="frame" x="496" y="116" width="99" height="38"/>
                                                     <color key="backgroundColor" systemColor="systemRedColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="38" id="EU4-Lq-YP9"/>

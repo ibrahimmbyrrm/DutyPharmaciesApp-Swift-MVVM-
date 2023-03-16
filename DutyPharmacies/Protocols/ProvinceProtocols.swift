@@ -34,8 +34,10 @@ protocol PharmacyViewModelOutput {
     
     func setDelegate(output : PharmacyViewOutput)
     
-    
 }
 protocol PharmacyViewOutput {
     func saveData(values : [Pharmacy])
+}
+protocol CellButton {
+    func goMaps(indexPath : IndexPath)
 }

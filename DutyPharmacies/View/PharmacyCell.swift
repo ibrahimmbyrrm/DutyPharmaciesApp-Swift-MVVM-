@@ -13,6 +13,8 @@ class PharmacyCell: UITableViewCell {
     @IBOutlet weak var pharmPhone: UILabel!
     @IBOutlet weak var pharmDistrict: UILabel!
     @IBOutlet weak var pharmName: UILabel!
+    var buttonProtocol : CellButton?
+    var indexPath : IndexPath?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,6 +25,13 @@ class PharmacyCell: UITableViewCell {
         let borderColor: UIColor = .red
         self.layer.borderColor = borderColor.cgColor
     }
+    
+    func updateLabels(pharmacy : Pharmacy) {
+        pharmAddress.text = pharmacy.address
+        pharmDistrict.text = "ILCE : \(pharmacy.dist)"
+        pharmName.text = "\(pharmacy.name) ECZANESİ"
+        pharmPhone.text = "TELEFON : \(pharmacy.phone)"
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -30,6 +39,7 @@ class PharmacyCell: UITableViewCell {
         // Configure the view for the selected state
     }
     @IBAction func openInMap(_ sender: Any) {
+        buttonProtocol?.goMaps(indexPath: indexPath!)
     }
     
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, ProvinceViewOutput {
+class WelcomeView: UIViewController, ProvinceViewOutput {
     func saveData(values: [Sehir]) {
             self.provinceList = values
             self.provincePicker.reloadAllComponents()
@@ -52,7 +52,7 @@ class ViewController: UIViewController, ProvinceViewOutput {
     
 }
 
-extension ViewController : UIPickerViewDataSource, UIPickerViewDelegate {
+extension WelcomeView : UIPickerViewDataSource, UIPickerViewDelegate {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }

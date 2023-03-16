@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8093595029C268250085642E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8093594F29C268250085642E /* AppDelegate.swift */; };
 		8093595229C268250085642E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8093595129C268250085642E /* SceneDelegate.swift */; };
-		8093595429C268250085642E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8093595329C268250085642E /* ViewController.swift */; };
+		8093595429C268250085642E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8093595329C268250085642E /* WelcomeView.swift */; };
 		8093595729C268250085642E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8093595529C268250085642E /* Main.storyboard */; };
 		8093595929C268250085642E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8093595829C268250085642E /* Assets.xcassets */; };
 		8093595C29C268250085642E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8093595A29C268250085642E /* LaunchScreen.storyboard */; };
@@ -32,6 +32,7 @@
 		809359AE29C27FC20085642E /* PharmaciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809359AD29C27FC20085642E /* PharmaciesViewModel.swift */; };
 		809359B029C280C20085642E /* PharmacyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809359AF29C280C20085642E /* PharmacyListView.swift */; };
 		809359B229C280E60085642E /* PharmacyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809359B129C280E60085642E /* PharmacyCell.swift */; };
+		80EEAFF929C3CD7B00D80DB2 /* MapKitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EEAFF829C3CD7B00D80DB2 /* MapKitViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +56,7 @@
 		8093594C29C268250085642E /* DutyPharmacies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DutyPharmacies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8093594F29C268250085642E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8093595129C268250085642E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8093595329C268250085642E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8093595329C268250085642E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		8093595629C268250085642E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8093595829C268250085642E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8093595B29C268250085642E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,6 +90,7 @@
 		809359AD29C27FC20085642E /* PharmaciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaciesViewModel.swift; sourceTree = "<group>"; };
 		809359AF29C280C20085642E /* PharmacyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyListView.swift; sourceTree = "<group>"; };
 		809359B129C280E60085642E /* PharmacyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyCell.swift; sourceTree = "<group>"; };
+		80EEAFF829C3CD7B00D80DB2 /* MapKitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,19 +143,13 @@
 		8093594E29C268250085642E /* DutyPharmacies */ = {
 			isa = PBXGroup;
 			children = (
-				809359AA29C272940085642E /* ProvinceProtocols.swift */,
+				80EEAFFB29C3CEFE00D80DB2 /* Core */,
+				80EEAFFA29C3CEE000D80DB2 /* Protocols */,
 				809359A529C26C0E0085642E /* SQLFiles */,
 				8093599E29C26A790085642E /* Services */,
 				8093599D29C26A760085642E /* ViewModel */,
 				8093599C29C26A740085642E /* View */,
 				8093599B29C26A710085642E /* Model */,
-				8093594F29C268250085642E /* AppDelegate.swift */,
-				8093595129C268250085642E /* SceneDelegate.swift */,
-				8093595829C268250085642E /* Assets.xcassets */,
-				8093595529C268250085642E /* Main.storyboard */,
-				8093595A29C268250085642E /* LaunchScreen.storyboard */,
-				8093595D29C268250085642E /* Info.plist */,
-				8093598129C269020085642E /* DutyPharmacies-Bridging-Header.h */,
 			);
 			path = DutyPharmacies;
 			sourceTree = "<group>";
@@ -195,7 +191,9 @@
 		8093599C29C26A740085642E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8093595329C268250085642E /* ViewController.swift */,
+				8093595A29C268250085642E /* LaunchScreen.storyboard */,
+				8093595529C268250085642E /* Main.storyboard */,
+				8093595329C268250085642E /* WelcomeView.swift */,
 				809359AF29C280C20085642E /* PharmacyListView.swift */,
 				809359B129C280E60085642E /* PharmacyCell.swift */,
 			);
@@ -207,6 +205,7 @@
 			children = (
 				809359A829C272480085642E /* ProvincesViewModel.swift */,
 				809359AD29C27FC20085642E /* PharmaciesViewModel.swift */,
+				80EEAFF829C3CD7B00D80DB2 /* MapKitViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -224,6 +223,7 @@
 		809359A529C26C0E0085642E /* SQLFiles */ = {
 			isa = PBXGroup;
 			children = (
+				8093598129C269020085642E /* DutyPharmacies-Bridging-Header.h */,
 				809359A629C26C270085642E /* illerDeprem.db */,
 				8093598C29C269040085642E /* FMDatabase.h */,
 				8093598429C269030085642E /* FMDatabase.m */,
@@ -238,6 +238,25 @@
 				8093598A29C269040085642E /* FMResultSet.m */,
 			);
 			path = SQLFiles;
+			sourceTree = "<group>";
+		};
+		80EEAFFA29C3CEE000D80DB2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				809359AA29C272940085642E /* ProvinceProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		80EEAFFB29C3CEFE00D80DB2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8093594F29C268250085642E /* AppDelegate.swift */,
+				8093595129C268250085642E /* SceneDelegate.swift */,
+				8093595829C268250085642E /* Assets.xcassets */,
+				8093595D29C268250085642E /* Info.plist */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,7 +393,7 @@
 			files = (
 				809359AB29C272940085642E /* ProvinceProtocols.swift in Sources */,
 				8093599A29C26A600085642E /* SQLService.swift in Sources */,
-				8093595429C268250085642E /* ViewController.swift in Sources */,
+				8093595429C268250085642E /* WelcomeView.swift in Sources */,
 				809359A929C272480085642E /* ProvincesViewModel.swift in Sources */,
 				8093598D29C269040085642E /* FMDatabaseQueue.m in Sources */,
 				809359A429C26ABF0085642E /* PharmacyModel.swift in Sources */,
@@ -384,6 +403,7 @@
 				809359A029C26A960085642E /* APIManager.swift in Sources */,
 				8093598E29C269040085642E /* FMDatabase.m in Sources */,
 				8093599029C269040085642E /* FMDatabasePool.m in Sources */,
+				80EEAFF929C3CD7B00D80DB2 /* MapKitViewModel.swift in Sources */,
 				8093599829C269DE0085642E /* Sehirlerdao.swift in Sources */,
 				8093595229C268250085642E /* SceneDelegate.swift in Sources */,
 				809359A229C26AA50085642E /* ProvinceModel.swift in Sources */,
@@ -569,7 +589,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 936XSD7LYL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DutyPharmacies/Info.plist;
+				INFOPLIST_FILE = DutyPharmacies/Core/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -583,7 +603,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ibrahimmbyrrm.DutyPharmacies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "DutyPharmacies/DutyPharmacies-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "DutyPharmacies/SQLFiles/DutyPharmacies-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -600,7 +620,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 936XSD7LYL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DutyPharmacies/Info.plist;
+				INFOPLIST_FILE = DutyPharmacies/Core/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -614,7 +634,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ibrahimmbyrrm.DutyPharmacies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "DutyPharmacies/DutyPharmacies-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "DutyPharmacies/SQLFiles/DutyPharmacies-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

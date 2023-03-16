@@ -6,7 +6,6 @@
 //
 
 import Foundation
-
 class PharmaciesViewModel : PharmacyViewModelOutput {
     func fetchData(city : String) {
         apiService.fetchPharmacies(city: city) { result in
@@ -32,6 +31,6 @@ class PharmaciesViewModel : PharmacyViewModelOutput {
     func setDelegate(output: PharmacyViewOutput) {
         viewOuput = output
     }
-    
-    
 }
+
+

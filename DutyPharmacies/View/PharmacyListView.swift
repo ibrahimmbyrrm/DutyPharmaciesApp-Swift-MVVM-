@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 class PharmacyListView: UIViewController {
     var pharmList = [Pharmacy]()
     @IBOutlet weak var tableView: UITableView!
@@ -16,23 +15,23 @@ class PharmacyListView: UIViewController {
         tableView.dataSource = self
         
     }
-    
-    
 
 }
-extension PharmacyListView : UITableViewDelegate, UITableViewDataSource {
+extension PharmacyListView : UITableViewDelegate, UITableViewDataSource, CellButton {
+    func goMaps(indexPath: IndexPath) {
+        GoMapViewModel.shared.openInMap(selectedPharmacy: pharmList[indexPath.row])
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PharmacyCell
         if !pharmList.isEmpty {
-            let pharm = pharmList[indexPath.row]
-            cell.pharmAddress.text = pharm.address
-            cell.pharmDistrict.text = "ILCE : \(pharm)"
-            cell.pharmName.text = "\(pharm.name) ECZANESİ"
-            cell.pharmPhone.text = "TELEFON : \(pharm.phone)"
+            cell.updateLabels(pharmacy: pharmList[indexPath.row])
         }
-        
+        cell.buttonProtocol = self
+        cell.indexPath = indexPath
         return cell
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if !pharmList.isEmpty {
             return pharmList.count
