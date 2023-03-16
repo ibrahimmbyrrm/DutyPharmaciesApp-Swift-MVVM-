@@ -128,7 +128,7 @@
                                                         <constraint firstAttribute="width" constant="281" id="JAF-Xh-Uf4"/>
                                                         <constraint firstAttribute="height" constant="21" id="ZOm-3F-yXa"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -138,7 +138,7 @@
                                                         <constraint firstAttribute="width" constant="281" id="4o5-6b-W4Y"/>
                                                         <constraint firstAttribute="height" constant="21" id="FM7-Uq-r6a"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -148,12 +148,12 @@
                                                         <constraint firstAttribute="width" constant="281" id="4CC-wM-ikJ"/>
                                                         <constraint firstAttribute="height" constant="67" id="4an-Y1-dDR"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYm-rh-mOw">
-                                                    <rect key="frame" x="293" y="116" width="99" height="38"/>
+                                                    <rect key="frame" x="289" y="116" width="99" height="38"/>
                                                     <color key="backgroundColor" systemColor="systemRedColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="38" id="EU4-Lq-YP9"/>
@@ -174,7 +174,7 @@
                                                 <constraint firstItem="GKi-Op-RGq" firstAttribute="leading" secondItem="CsC-Po-lb5" secondAttribute="trailing" constant="3" id="Bc7-vx-MPC"/>
                                                 <constraint firstAttribute="bottom" secondItem="Rmg-ec-k0o" secondAttribute="bottom" constant="6" id="BpG-pH-aJx"/>
                                                 <constraint firstItem="GKi-Op-RGq" firstAttribute="leading" secondItem="DDe-uK-fSo" secondAttribute="trailing" constant="3" id="D51-kk-t1j"/>
-                                                <constraint firstAttribute="trailing" secondItem="RYm-rh-mOw" secondAttribute="trailing" constant="1" id="D8V-qo-vNI"/>
+                                                <constraint firstAttribute="trailing" secondItem="RYm-rh-mOw" secondAttribute="trailing" constant="5" id="D8V-qo-vNI"/>
                                                 <constraint firstItem="GKi-Op-RGq" firstAttribute="leading" secondItem="CsC-Po-lb5" secondAttribute="trailing" constant="3" id="Fbu-BR-NuU"/>
                                                 <constraint firstAttribute="bottom" secondItem="RYm-rh-mOw" secondAttribute="bottom" constant="11" id="GlN-7d-c68"/>
                                                 <constraint firstItem="CsC-Po-lb5" firstAttribute="leading" secondItem="Dju-Jl-0Nb" secondAttribute="leading" constant="4" id="IPg-Ti-A0G"/>
@@ -187,10 +187,10 @@
                                                 <constraint firstItem="lGC-Hp-vsD" firstAttribute="top" secondItem="DDe-uK-fSo" secondAttribute="bottom" constant="8" symbolic="YES" id="XZw-q4-Hxh"/>
                                                 <constraint firstItem="Rmg-ec-k0o" firstAttribute="top" secondItem="lGC-Hp-vsD" secondAttribute="bottom" constant="8" symbolic="YES" id="Zzs-tm-S45"/>
                                                 <constraint firstItem="RYm-rh-mOw" firstAttribute="top" secondItem="GKi-Op-RGq" secondAttribute="bottom" constant="24" id="aLX-iP-IGe"/>
-                                                <constraint firstItem="RYm-rh-mOw" firstAttribute="leading" secondItem="Rmg-ec-k0o" secondAttribute="trailing" constant="8" symbolic="YES" id="eQJ-vK-wil"/>
+                                                <constraint firstItem="RYm-rh-mOw" firstAttribute="leading" secondItem="Rmg-ec-k0o" secondAttribute="trailing" constant="4" id="eQJ-vK-wil"/>
                                                 <constraint firstItem="Rmg-ec-k0o" firstAttribute="top" secondItem="lGC-Hp-vsD" secondAttribute="bottom" constant="8" symbolic="YES" id="fP4-Te-l5b"/>
                                                 <constraint firstItem="CsC-Po-lb5" firstAttribute="top" secondItem="Dju-Jl-0Nb" secondAttribute="top" constant="5" id="jIe-US-rlB"/>
-                                                <constraint firstItem="RYm-rh-mOw" firstAttribute="leading" secondItem="Rmg-ec-k0o" secondAttribute="trailing" constant="8" symbolic="YES" id="xbU-cA-2CH"/>
+                                                <constraint firstItem="RYm-rh-mOw" firstAttribute="leading" secondItem="Rmg-ec-k0o" secondAttribute="trailing" constant="4" id="xbU-cA-2CH"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

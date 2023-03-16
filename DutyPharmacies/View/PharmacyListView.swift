@@ -26,9 +26,9 @@ extension PharmacyListView : UITableViewDelegate, UITableViewDataSource {
         if !pharmList.isEmpty {
             let pharm = pharmList[indexPath.row]
             cell.pharmAddress.text = pharm.address
-            cell.pharmDistrict.text = pharm.dist
-            cell.pharmName.text = pharm.name
-            cell.pharmPhone.text = pharm.phone
+            cell.pharmDistrict.text = "ILCE : \(pharm)"
+            cell.pharmName.text = "\(pharm.name) ECZANESİ"
+            cell.pharmPhone.text = "TELEFON : \(pharm.phone)"
         }
         
         return cell

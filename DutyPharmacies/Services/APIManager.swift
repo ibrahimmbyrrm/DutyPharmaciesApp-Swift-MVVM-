@@ -28,6 +28,7 @@ class APIManager : APIService {
               do {
                   let jsonData = try? JSONDecoder().decode(InitialData.self, from: data!)
                   guard let jsonData = jsonData else {return}
+                  print(jsonData.result[0].loc)
                   completion(.success(jsonData.result))
               }
           }
